@@ -11,5 +11,10 @@ public class ItemModel {
         this.price = "";
     }
 
+    public babarakalon(String name, String price){
+        this.name = name;
+        this.price = price;
+    }
+
 
 }
