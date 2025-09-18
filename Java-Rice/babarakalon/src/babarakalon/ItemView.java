@@ -4,10 +4,26 @@
  */
 package babarakalon;
 
-/**
- *
- * @author H
- */
+import java.util.Scanner;
+
 public class ItemView {
-    
+    public int showMenu(){
+
+    }
+
+    public ItemModel addItemView(){
+
+    }
+
+    public ItemModel updateItemView(){
+
+    }
+
+    public ItemModel deleteItemView(){
+
+    }
+
+    public ItemModel printItemView(){
+
+    }
 }
