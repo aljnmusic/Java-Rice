@@ -28,4 +28,21 @@ public class ItemModel {
         this.name = name;
     }
 
+    public String getBakalonName() {
+        return this.name;
+    }
+
+    public void setBakalonPrice(String price) {
+        if(price.equals("")){
+            System.out.println("Bakalon Price is Empty");
+            return;
+        }
+
+        this.price = price;
+    }
+
+    public String getBakalonPrice() {
+        return this.price;
+    }
+
 }
