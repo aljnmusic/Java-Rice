@@ -35,7 +35,14 @@ public class ItemController {
 
         Scanner sc = new Scanner(System.in);
 
+        System.out.print("Input updated name: ");
+        String name = sc.nextLine();
 
+        System.out.print("Input updated price: ");
+        String price = sc.nextLine();
+
+        items.get(index).setGroceryName(name);
+        items.get(index).setGroceryPrice(price);
     }
 
     public int searchItem(ItemModel item){
