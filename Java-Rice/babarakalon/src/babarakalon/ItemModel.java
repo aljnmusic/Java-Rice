@@ -9,5 +9,9 @@ public class ItemModel {
     private String name;
     private String price;
 
+    public ItemModel(){
+        this.name = "";
+        this.price = "";
+    }
 
 }
