@@ -45,4 +45,9 @@ public class ItemModel {
         return this.price;
     }
 
+    @Override
+    public String toString(){
+        return "{ \"name\": " + this.name + ", \"price\":" + this.price + "}";
+    }
+
 }
