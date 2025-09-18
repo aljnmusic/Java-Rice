@@ -19,4 +19,13 @@ public class ItemModel {
         this.price = price;
     }
 
+    public void setBakalonName(String name) {
+        if(name.equals("")){
+            System.out.println("Bakalon Name is Empty");
+            return;
+        }
+
+        this.name = name;
+    }
+
 }
