@@ -33,7 +33,17 @@ public class ItemView {
             case  "d":
                 optionCode = 3;
                 break;
+
+            case "S":
+            case "s":
+                optionCode = 4;
+                break;
+
+            default:
+                optionCode = -1;
         }
+
+        return optionCode;
     }
 
     public ItemModel addItemView(){
