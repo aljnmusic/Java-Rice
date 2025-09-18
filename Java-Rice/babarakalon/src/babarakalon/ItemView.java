@@ -63,11 +63,19 @@ public class ItemView {
     }
 
     public ItemModel updateItemView(){
+        System.out.println("Update Item");
+        System.out.print("Name: ");
+        String name = sc.nextLine();
 
+        return new ItemModel(name, "");
     }
 
     public ItemModel deleteItemView(){
+        System.out.println("Delete Item");
+        System.out.print("Name: ");
+        String name = sc.nextLine();
 
+        return new ItemModel(name, "");
     }
 
     public ItemModel printItemView(){
