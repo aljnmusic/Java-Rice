@@ -14,4 +14,9 @@ public class ItemModel {
         this.price = "";
     }
 
+    public ItemModel(String name, String price) {
+        this.name = name;
+        this.price = price;
+    }
+
 }
