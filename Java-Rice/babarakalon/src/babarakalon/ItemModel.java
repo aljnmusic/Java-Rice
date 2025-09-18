@@ -19,29 +19,29 @@ public class ItemModel {
         this.price = price;
     }
 
-    public void setBakalonName(String name) {
+    public void setGroceryName(String name) {
         if(name.equals("")){
-            System.out.println("Bakalon Name is Empty");
+            System.out.println("Grocery name is empty");
             return;
         }
 
         this.name = name;
     }
 
-    public String getBakalonName() {
+    public String getGroceryName() {
         return this.name;
     }
 
-    public void setBakalonPrice(String price) {
+    public void setGroceryPrice(String price) {
         if(price.equals("")){
-            System.out.println("Bakalon Price is Empty");
+            System.out.println("Grocery Price is Empty");
             return;
         }
 
         this.price = price;
     }
 
-    public String getBakalonPrice() {
+    public String getGroceryPrice() {
         return this.price;
     }
 
