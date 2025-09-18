@@ -4,10 +4,15 @@
  */
 package babarakalon;
 
-/**
- *
- * @author H
- */
+import java.util.Scanner;
+import java.util.ArrayList;
+
 public class ItemController {
-    
+    private ItemView view;
+    private ArrayList<ItemModel> items;
+
+    public ItemController(){
+        this.view = new ItemView();
+        this.items = new ArrayList<>();
+    }
 }
