@@ -47,7 +47,19 @@ public class ItemView {
     }
 
     public ItemModel addItemView(){
+        System.out.println("Add New Item");
+        System.out.print("Name: ");
+        String name = sc.nextLine();
 
+        System.out.print("Price: ");
+        String price = sc.nextLine();
+
+        if(name.equals("") || price.equals("")){
+            System.out.println("Invalid Input");
+            return null;
+        }
+
+        return new ItemModel(name, price);
     }
 
     public ItemModel updateItemView(){
