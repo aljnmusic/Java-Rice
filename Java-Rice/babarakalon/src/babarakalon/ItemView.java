@@ -39,6 +39,11 @@ public class ItemView {
                 optionCode = 4;
                 break;
 
+            case "Q":
+            case "q":
+                optionCode = 0;
+                break;
+
             default:
                 optionCode = -1;
         }
