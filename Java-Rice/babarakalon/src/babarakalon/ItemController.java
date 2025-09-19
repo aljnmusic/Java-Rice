@@ -43,6 +43,8 @@ public class ItemController {
 
         items.get(index).setGroceryName(name);
         items.get(index).setGroceryPrice(price);
+
+        return 0;
     }
 
     public int searchItem(ItemModel item){
@@ -69,7 +71,7 @@ public class ItemController {
         boolean running = true;
 
         do{
-            int option = view.showMenu()
+            int option = view.showMenu();
             int opcode = 0;
 
             switch (option){
@@ -89,7 +91,7 @@ public class ItemController {
                     break;
 
                 case 4:
-                    option = searchItem(view.printItemView());
+                    view.printItemView(items);
                     printStatus(opcode);
                     break;
 
@@ -101,6 +103,6 @@ public class ItemController {
                     System.out.println("Unrecognized operation");
             }
 
-        } while(running)
+        } while(running);
     }
 }
