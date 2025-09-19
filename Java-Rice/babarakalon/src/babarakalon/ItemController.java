@@ -54,4 +54,53 @@ public class ItemController {
 
         return -1;
     }
+
+    public void printStatus(int opcode){
+        if(opcode == 0){
+            System.out.print("Operation sucessfull.");
+        } else if(opcode == 1){
+            System.out.print("Operation failed.");
+        } else{
+            System.out.print("Unrecognized operation");
+        }
+    }
+
+    void initialize(){
+        boolean running = true;
+
+        do{
+            int option = view.showMenu()
+            int opcode = 0;
+
+            switch (option){
+                case 1:
+                    option = addItem(view.addItemView());
+                    printStatus(opcode);
+                    break;
+
+                case 2:
+                    option = updateItem(view.updateItemView());
+                    printStatus(opcode);
+                    break;
+
+                case 3:
+                    option = deleteItem(view.deleteItemView());
+                    printStatus(opcode);
+                    break;
+
+                case 4:
+                    option = searchItem(view.printItemView());
+                    printStatus(opcode);
+                    break;
+
+                case 0:
+                    System.out.println("Operation terminated.");
+                    break;
+
+                default:
+                    System.out.println("Unrecognized operation");
+            }
+
+        } while(running)
+    }
 }

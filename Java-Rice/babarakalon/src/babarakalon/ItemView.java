@@ -4,6 +4,7 @@
  */
 package babarakalon;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ItemView {
@@ -83,7 +84,11 @@ public class ItemView {
         return new ItemModel(name, "");
     }
 
-    public ItemModel printItemView(){
+    public ItemModel printItemView(ArrayList<ItemModel> items){
+        for(ItemModel item : items){
+            System.out.println("Item Name: " + item.getGroceryName() + " Price: " + item.getGroceryPrice());
+        }
 
+        System.out.println("--------------------");
     }
 }
