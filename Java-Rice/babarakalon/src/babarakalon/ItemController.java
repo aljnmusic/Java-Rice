@@ -67,7 +67,7 @@ public class ItemController {
         }
     }
 
-    void initialize(){
+    public void initialize(){
         boolean running = true;
 
         do{
