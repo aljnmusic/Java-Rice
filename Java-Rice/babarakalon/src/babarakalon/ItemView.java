@@ -12,7 +12,7 @@ public class ItemView {
     private Scanner sc = new Scanner(System.in);
 
     public int showMenu(){
-        System.out.println("Bakalon Manager");
+        System.out.println("\nBakalon Manager");
         System.out.println("[A] Add New Item\n[U] Update Item\n[D] Delete Item\n[S] Show all Items\n[Q] Quit");
         System.out.print("Enter choice: ");
         String option = sc.nextLine();
