@@ -1,7 +1,7 @@
 package shape_inheritance;
 
 public class Cube extends ThreeDimensionalShape{
-    public double sideLength;
+    private double sideLength;
 
     public Cube(double sideLength){
         super("This is a Cube");
