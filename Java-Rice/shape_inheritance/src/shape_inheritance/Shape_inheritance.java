@@ -1,20 +1,30 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package shape_inheritance;
 
 /**
  *
- * @author H
+ * Galos
  */
 public class Shape_inheritance {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        Triangle triangle = new Triangle();
+
+        triangle.setFirstSide(3);
+        triangle.setSecondSide(4);
+        triangle.setThirdSide(5);
+
+        triangle.setName("Triangle");
+        triangle.setUnits("Meters");
+        triangle.setisFilled(true);
+
+        System.out.println("System Information\n");
+        System.out.println("Name: " + triangle.getName());
+        System.out.println("Units: " + triangle.getUnits());
+        System.out.println("Is Filled: " + triangle.getisFilled());
+        System.out.println("Area of Triangle: " + triangle.getArea() + " units squared");
+        System.out.println("Perimeter of Triangle: " + triangle.getPerimeter() + " units");
+
     }
     
 }
