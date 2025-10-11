@@ -37,7 +37,13 @@ public class Shape_inheritance {
 
         System.out.println("\nCube");
         System.out.println("Description: " + cube.getDescription());
+        System.out.println("Surface Area: " + cube.calculateArea());
+        System.out.println("Volume: " + cube.calculateVolume() + "\n");
 
+        System.out.println("\nTetrahedron");
+        System.out.println("Description: " + tetrahedron.getDescription());
+        System.out.println("Surface Area: " + tetrahedron.calculateArea());
+        System.out.println("Volume: " + tetrahedron.calculateVolume() + "\n");
 
     }
     
